@@ -7,7 +7,7 @@ def display_board(board)
 end
 
 def input_to_index(input)
-  input = gets.strip
+  input.to_i - 1
 end
 
 def valid_move?(board, index)
@@ -18,7 +18,8 @@ def position_taken?(board, index)
   board[index] === "X" || board[index] ==="O" ? true : false
 end
 
-def move
+def move(board, index, character = "X")
+  board[index] = character
 end
 
 def turn
