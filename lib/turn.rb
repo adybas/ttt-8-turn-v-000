@@ -28,10 +28,9 @@ def turn(board)
   input_to_index(input)
 
   if input_to_index(input) === valid_move?(board, index)
-    make the move for input
+    move(board, index, character)
   else
      puts "Please enter 1-9:"
-     ask for input again until you get a valid input
   end
   
 end
